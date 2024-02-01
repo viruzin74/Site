@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+    font-family: Arial, sans-serif;
+}
+
+.phone {
+    width: 375px;
+    height: 667px;
+    background-color: #333;
+    margin: 50px auto;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 5px solid #444; /* Adicione a borda com a cor cinza desejada */
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg'); /* Adicione o URL do seu background aqui */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.status-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+}
+
+.home-button {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 30px);
+}
+
+.icon {
+    width: 100px; /* largura dos ícones */
+}
+
+/* Estilos para a mini janela */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #555; /* Define o fundo da minijanela como cinza */
+    margin: 30% auto;
+    padding: 20px;
+    border: 2px solid #333; /* Adiciona uma borda de 2px sólida cinza */
+    width: 60%; /* Ajusta a largura da minijanela */
+    max-width: 400px; /* Limita a largura máxima da minijanela */
+    text-align: center; /* Centraliza o conteúdo */
+    border-radius: 10px; /* Adiciona uma borda arredondada */
+}
+
+.modal-content a {
+    display: block;
+    margin-bottom: 10px;
+}

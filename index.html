@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LzmWa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .fadeInOnLoad {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fadeInOnLoad.fadeIn {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <div class="phone">
+        <div class="status-bar"></div>
+        <div class="screen">
+            <a href="WhatsApp.apk" download class="fadeInOnLoad">
+    <img src="icone1.png" alt="Ícone 1" class="icon">
+</a>
+<img src="icone2.png" alt="Ícone 2" class="icon fadeInOnLoad" id="icone2">
+        </div>
+        <div class="home-button"></div>
+    </div>
+
+    <!-- Mini janela -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <a href="https://youtube.com/@lzmfcklv?feature=shared"><img src="Youtube.jpg" alt="Youtube" width="50" height="50"></a>
+        <a href="https://www.vakinha.com.br/4353316"><img src="Donate.jpg" alt="Donate" width="50" height="50"></a>
+        <a href="https://t.me/LzmWaUpdates"><img src="Telegram.jpg" alt="Telegram" width="50" height="50"></a>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script> <!-- Referência ao arquivo JavaScript -->
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elements = document.getElementsByClassName('fadeInOnLoad');
+
+        function fadeIn() {
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                element.classList.add('fadeIn');
+            }
+        }
+
+        fadeIn();
+    });
+</script>
+</body>
+</html>
